@@ -33,8 +33,8 @@ main();
 
 /**
  * 교차점 찾기 알고리즘
- * 시간복잡도: O()
- * 공간복잡도: O()
+ * 시간복잡도: O(n)
+ * 공간복잡도: O(n)
  */
 function getIntersection(l1, l2){
     var len1 = getListLength(l1.getFirst());
