@@ -39,7 +39,7 @@ class LinkedList {
             currentNode = currentNode.next;
         }
         currentNode.next = endNode;
-        return;
+        return endNode;
     }
 
     //  노드를 삭제하는 메서드
@@ -64,6 +64,15 @@ class LinkedList {
         }
         process.stdout.write(`(${currentNode.data})\n`);
         return;
+    }
+
+    //  인자로 받은 링크드리스트를 현재 리스트의 다음요소로 추가하는 함수
+    addNext(node){
+        let currentNode = this.header;
+        while(currentNode.next != null){
+            currentNode = currentNode.next;
+        }
+        currentNode.next = node;
     }
 }
 
