@@ -1,4 +1,5 @@
-const LinkedList = require("../../dataStructures/linkedList");
+const LinkedList = require("../../requires/LinkedList");
+
 
 function main(){
     const ll = new LinkedList();
