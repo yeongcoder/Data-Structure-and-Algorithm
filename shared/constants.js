@@ -19,6 +19,14 @@ class EmptyStackException extends Error {
     }
 }
 
+class IndexOutOfBoundsException extends Error {
+    constructor(){
+        super();
+        this.message = 'Index out of bounds';
+    }
+}
+
 module.NoSuchElementException = NoSuchElementException;
 module.FullStackExcetion = FullStackExcetion;
 module.EmptyStackException = EmptyStackException;
+module.IndexOutOfBoundsException = IndexOutOfBoundsException;

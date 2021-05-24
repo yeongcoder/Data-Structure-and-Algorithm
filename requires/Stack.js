@@ -8,6 +8,7 @@ class Node {
 class Stack {
     constructor(){
         this.top = null;
+        this.size = 0;
     }
     pop(){
         if(this.top == null){
@@ -15,12 +16,14 @@ class Stack {
         }
         let item = this.top.data;
         this.top = this.top.next;
+        this.size--;
         return item;
     }
     push(data){
         let node = new Node(data);
         node.next = this.top;
         this.top = node;
+        this.size++;
     }
     peek(){
         if(this.top == null) {
